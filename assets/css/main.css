@@ -67,6 +67,27 @@ body svg {
     max-width: 100%;
 }
 
+
+/* Default logo size for desktop */
+.header .logo img {
+    width: 7vw; /* Logo size for desktop */
+}
+
+/* Adjust logo and navbar for mobile view */
+@media (max-width: 767.98px) { /* Applies to mobile screens */
+    .header .logo img {
+        width: 75px; /* Fixed size for mobile */
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem; /* Smaller padding for the toggle button */
+    }
+
+    .navbar-nav {
+        font-size: 14px; /* Smaller font size for nav items */
+    }
+}
+
 body .thm-yellow {
     color: var(--thm-yellow);
 }
